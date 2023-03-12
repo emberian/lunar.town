@@ -1,0 +1,16 @@
+{
+  "favicon": "https://lunar.town/favicon.ico",
+  "path_prefix": "splash",
+  "additional_pages": { },
+  "changelog": true,
+  "artifacts": {
+    "cargo_dist": true,
+    "package_managers": { },
+    "soon": ""
+  },
+  "analytics": {
+    "plausible": {
+      "domain": "lunar.town"
+    }
+  }
+}

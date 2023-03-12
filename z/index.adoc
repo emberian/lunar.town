@@ -1,0 +1,7 @@
+= authz and other gluez
+ember arlynx <ember@lunar.town>
+:description: z is responsible for some important hooks
+
+this is going to be a long one, so buckle up. z is a new project that i've been working on for a while now. opilot is helping me, i guess? kinda cool.
+
+going to go evaluate some rust web frameworks now...

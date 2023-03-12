@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title></title>
+    <link rel="icon" href="https://book.lunar.town/theme/favicon.svg"><link rel="stylesheet" href="https://book.lunar.town/theme/css/article.css"><!-- Hide sidebar by default if the window is not so wide -->
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            if (document.body.clientWidth <= 900) {
+                document.getElementById("nav-btn-click").checked = true;
+            }
+        });
+    </script>
+</head>
+
+<body>
+<input type="checkbox" id="nav-btn-click" style="display:none;">
+    <div id="header">
+        <div id="nav-btn">
+            <label for="nav-btn-click">
+                <i class="fa fa-list-ul"></i>
+            </label>
+        </div>        <h1>Untitled</h1></div>
+
+    <nav id="sidebar" class="sidebar">
+        <ol><li class="sidebar-item"><div class="sidebar-item-flex">        <a href="https://book.lunar.town/index.html" class="sidebar-item-flex-title inactive">&lt;untitled&gt;</a>
+        <!-- div, takes place and aligns the title to the left -->
+                <div class="sidebar-item-flex-toggle" style="opacity: 0;">X</div>
+    </div></li><li class="sidebar-item"><div class="sidebar-item-flex"><a href="https://book.lunar.town/welcome.html" class="sidebar-item-flex-title active">
+&lt;untitled&gt;</a>
+        <!-- div, takes place and aligns the title to the left -->
+                <div class="sidebar-item-flex-toggle" style="opacity: 0;">X</div>
+    </div></li></ol>
+    </nav>
+    <div id="dummy-header"></div>
+
+    <div id="adoc-meta">
+        
+        
+        
+        
+    </div>
+
+    <div id="content" class="article">
+        <main>
+            <!-- Asciidoctor output --><div class="paragraph">
+<p>welcome to the lunar town!</p>
+</div>
+<div class="paragraph">
+<p><code>cargo install .</code> will probably not work?</p>
+</div>
+<div class="paragraph">
+<p><code>$ l</code> is how we go forward &#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p><code>$ w</code> is how we go back &#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p><code>$ z</code> is OAuth and such&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p><code>$ c</code> is a shared calendar/agenda/meeting window stuff?</p>
+</div>
+<div class="paragraph">
+<p><code>$ l chatter</code> is a GPT chatbot lobby</p>
+</div>
+</main>
+    </div>
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            messageStyle: "none",
+            tex2jax: {
+                inlineMath: [["\\(", "\\)"]],
+                displayMath: [["\\[", "\\]"]],
+                ignoreClass: "nostem|nolatexmath"
+            },
+            asciimath2jax: {
+                delimiters: [["\\$", "\\$"]],
+                ignoreClass: "nostem|noasciimath"
+            },
+            TeX: { equationNumbers: { autoNumber: "none" } }
+        })
+        MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+            MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+                if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains('stemblock')) {
+                    data.math.root.display = "block"
+                }
+                return data
+            })
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+
+    <!-- Prism.js -->
+    <script src="https://book.lunar.town/theme/js/prism.js"></script>
+</body>
+
+</html>

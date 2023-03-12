@@ -1,0 +1,13 @@
+welcome to the lunar town!
+
+`cargo install .` will probably not work?
+
+`$ l` is how we go forward ...
+
+`$ w` is how we go back ...
+
+`$ z` is OAuth and such...
+
+`$ c` is a shared calendar/agenda/meeting window stuff?
+
+`$ l chatter` is a GPT chatbot lobby

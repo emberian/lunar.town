@@ -1,0 +1,6 @@
+.DS_Store
+.asciidoctor
+.*swp
+.adbook-cache
+.editorconfig
+target
