@@ -51,13 +51,13 @@ file = "default/0.zone"
 
 [[zones]]
 ## zone: this is the ORIGIN of the zone, aka the base name, '.' is implied on the end
-zone = "example.com"
+zone = "lunar.town"
 
 ## zone_type: Primary, Secondary, Hint, Forward
 zone_type = "Primary"
 
 ## file: this is relative to the directory above
-file = "example.com.zone"
+file = "lunar.town.zone"
 
 ## if false, updates will not be allowed, default false
 # allow_update = false
